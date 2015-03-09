@@ -1,0 +1,8 @@
+[{
+    "char" : "bird",
+    "text" : "Hey there asshole!"
+},
+{
+    "char" : "tommy",
+    "text" : "What the fuck do you want, bird???"
+}]
