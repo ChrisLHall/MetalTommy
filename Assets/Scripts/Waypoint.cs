@@ -15,9 +15,13 @@ public class Waypoint : MonoBehaviour {
 	}
 
     void OnMouseDown () {
-        if (character.currentWaypoint != gameObject
-                && character.nextWaypoint != gameObject) {
-            character.nextWaypoint = gameObject;
-        }
+        character.TrySetWaypoint(this);
+    }
+
+    public virtual void OnArrival () {
+    }
+
+    public virtual void OnDeparture () {
+
     }
 }

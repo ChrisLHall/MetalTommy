@@ -2,9 +2,9 @@
 using System.Collections;
 
 public class Character : MonoBehaviour {
-    public GameObject currentWaypoint;
+    public Waypoint currentWaypoint;
     [HideInInspector]
-    public GameObject nextWaypoint;
+    public Waypoint nextWaypoint;
     public float speedUnitsPerSec;
 
     static readonly Vector3 WAYPOINT_OFFSET = new Vector3(0f, -1f, 0f);
@@ -31,7 +31,14 @@ public class Character : MonoBehaviour {
         }
 	}
 
-    public GameObject AtWaypoint {
+    public void TrySetWaypoint (Waypoint waypoint) {
+        if (currentWaypoint != waypoint
+            && nextWaypoint != waypoint) {
+            nextWaypoint = waypoint;
+        }
+    }
+
+    public Waypoint AtWaypoint {
         get {
             if (nextWaypoint != null || currentWaypoint == null) {
                 return null;

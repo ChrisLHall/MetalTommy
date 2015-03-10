@@ -5,4 +5,12 @@
 {
     "char" : "tommy",
     "text" : "What the fuck do you want, bird???"
+},
+{
+    "char" : "dog",
+    "text" : "WATCH YOUR MOUTH KID"
+},
+{
+    "char" : "monkey",
+    "text" : "Or you'll die."
 }]

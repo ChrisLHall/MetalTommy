@@ -27,6 +27,8 @@ public class DialogueGUI : MonoBehaviour {
         currentPart = 0;
         partCharacter = null;
         partText = null;
+
+        SetCharAndText();
 	}
 	
 	// Update is called once per frame
@@ -51,7 +53,6 @@ public class DialogueGUI : MonoBehaviour {
         if (!InConversation) {
             return;
         }
-
         currentPart++;
         if (currentPart >= currentConvo.Count) {
             currentPart = 0;
@@ -65,8 +66,10 @@ public class DialogueGUI : MonoBehaviour {
         if (currentConvo == null) {
             characterImage.sprite = null;
             dialogueText.text = "";
+            Hide();
             return;
         }
+        Show();
         partCharacter = currentConvo[currentPart]["char"];
         partText = currentConvo[currentPart]["text"];
         
@@ -80,7 +83,17 @@ public class DialogueGUI : MonoBehaviour {
         } else if (partCharacter == "monkey") {
             characterImage.sprite = monkeySprite;
         }
-        dialogueText.text = partText;
+        dialogueText.text = partText + " (click)";
+    }
+
+    void Show () {
+        characterImage.gameObject.SetActive(true);
+        dialogueText.transform.parent.gameObject.SetActive(true);
+    }
+
+    void Hide () {
+        characterImage.gameObject.SetActive(false);
+        dialogueText.transform.parent.gameObject.SetActive(false);
     }
 
     public bool InConversation {
