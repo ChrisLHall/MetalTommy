@@ -11,6 +11,7 @@ public class Character : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        currentWaypoint.OnArrival();
         transform.position = CurrentWaypointPosition;
         nextWaypoint = null;
 	}
@@ -25,6 +26,7 @@ public class Character : MonoBehaviour {
                 transform.position = GoToPosition;
                 currentWaypoint = nextWaypoint;
                 nextWaypoint = null;
+                currentWaypoint.OnArrival();
             } else {
                 transform.position += diff.normalized * actualSpeed;
             }
@@ -35,6 +37,7 @@ public class Character : MonoBehaviour {
         if (currentWaypoint != waypoint
             && nextWaypoint != waypoint) {
             nextWaypoint = waypoint;
+            currentWaypoint.OnDeparture();
         }
     }
 

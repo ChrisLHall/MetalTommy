@@ -41,7 +41,6 @@ public class DialogueGUI : MonoBehaviour {
             return;
         }
 
-        // TODO load text assets as JSON files
 		TextAsset asset = Resources.Load<TextAsset>("Conversations/"
                 + nameOfConversation);
         currentConvo = JSON.Parse(asset.text).AsArray;
@@ -73,17 +72,9 @@ public class DialogueGUI : MonoBehaviour {
         partCharacter = currentConvo[currentPart]["char"];
         partText = currentConvo[currentPart]["text"];
         
-        // This is bad programming but we don't need much generality so it's okay
-        if (partCharacter == "tommy") {
-            characterImage.sprite = tommySprite;
-        } else if (partCharacter == "dog") {
-            characterImage.sprite = dogSprite;
-        } else if (partCharacter == "bird") {
-            characterImage.sprite = birdSprite;
-        } else if (partCharacter == "monkey") {
-            characterImage.sprite = monkeySprite;
-        }
-        dialogueText.text = partText + " (click)";
+        characterImage.sprite
+                = Resources.Load<Sprite>("Conversations/partCharacter");
+        dialogueText.text = partText;
     }
 
     void Show () {

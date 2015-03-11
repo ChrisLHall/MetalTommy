@@ -5,16 +5,16 @@ public class Waypoint : MonoBehaviour {
     private Character character;
 
 	// Use this for initialization
-	void Start () {
+	protected virtual void Start () {
         character = FindObjectOfType<Character>();
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	protected virtual void Update () {
 	
 	}
 
-    void OnMouseDown () {
+    protected virtual void OnMouseDown () {
         character.TrySetWaypoint(this);
     }
 

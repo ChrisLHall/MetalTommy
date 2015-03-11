@@ -8,7 +8,10 @@ public class Controller : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+        Character = FindObjectOfType<Character>();
+        Dialogue = FindObjectOfType<DialogueGUI>();
+        Fade = FindObjectOfType<FadeGUI>();
+        Inventory = FindObjectOfType<InventoryGUI>();
 	}
 	
 	// Update is called once per frame
@@ -22,4 +25,31 @@ public class Controller : MonoBehaviour {
             depthObjects[i].GetComponent<SpriteRenderer>().sortingOrder = 5 + i;
         }
 	}
+
+    /** The level's controller instance. */
+    public static Controller Get {
+        get {
+            return FindObjectOfType<Controller>();
+        }
+    }
+
+    public Character Character {
+        get;
+        private set;
+    }
+
+    public DialogueGUI Dialogue {
+        get;
+        private set;
+    }
+
+    public FadeGUI Fade {
+        get;
+        private set;
+    }
+
+    public InventoryGUI Inventory {
+        get;
+        private set;
+    }
 }

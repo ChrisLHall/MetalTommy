@@ -3,9 +3,8 @@ using UnityEngine.UI;
 using System.Collections;
 
 public class InventoryItem : MonoBehaviour {
-    public Sprite sprite;
     static readonly float HIGHLIGHTED_SIZE = 1.2f;
-    static readonly float SPACING = 15f;
+    static readonly float SPACING = 10f;
     RectTransform rectTransform;
 
     public delegate void ClickAction ();
@@ -14,10 +13,6 @@ public class InventoryItem : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         rectTransform = GetComponent<RectTransform>();
-        GetComponent<Image>().sprite = sprite;
-
-        PositionAtXIndex(0);
-        SetClickAction(()=>Debug.Log("hej"));
 	}
 	
 	// Update is called once per frame
@@ -27,19 +22,25 @@ public class InventoryItem : MonoBehaviour {
 
     /** Position this inventory item as the INDEXth item (starting from 0). */
     public void PositionAtXIndex (int index) {
-        Vector3 offset = rectTransform.offsetMin;
+        Vector3 offsetMin = rectTransform.offsetMin;
         Vector3 offsetMax = rectTransform.offsetMax;
-        float height = rectTransform.rect.height;
-        offset.x = SPACING * ((float)index + 1f)
-                + height * (float)index;
-        offsetMax.x = offset.x + height;
-        rectTransform.offsetMin = offset;
+        offsetMin.y = SPACING;
+        offsetMax.y = -SPACING;
+        rectTransform.offsetMin = offsetMin;
         rectTransform.offsetMax = offsetMax;
+        
+        float height = rectTransform.rect.height;
+        rectTransform.SetInsetAndSizeFromParentEdge(RectTransform.Edge.Left,
+                                                    SPACING, height);
     }
 
     /** Sets the function that is called when this item is clicked. */
     public void SetClickAction (ClickAction clickAction) {
         onClick = clickAction;
+    }
+
+    public void SetSprite (Sprite spr) {
+        GetComponent<Image>().sprite = spr;
     }
 
     public void OnClickIcon () {
@@ -54,4 +55,6 @@ public class InventoryItem : MonoBehaviour {
     public void Unhighlight () {
         rectTransform.localScale = new Vector3(1f, 1f, 1f);
     }
+
+
 }

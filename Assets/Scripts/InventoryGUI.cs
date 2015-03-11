@@ -14,12 +14,15 @@ public class InventoryGUI : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	    
+        int counter = 0;
+        foreach (InventoryItem item in inventoryItems.Values) {
+            item.PositionAtXIndex(counter);
+            counter++;
+        }
 	}
 
     public InventoryItem GetItem (string name) {
         if (!inventoryItems.ContainsKey(name)) {
-            Debug.LogWarning("Inventory has no item called " + name);
             return null;
         }
         return inventoryItems[name];

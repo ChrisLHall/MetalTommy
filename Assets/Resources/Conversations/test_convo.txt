@@ -1,16 +1,16 @@
 [{
-    "char" : "bird",
+    "char" : "byrd_talk",
     "text" : "Hey there asshole!"
 },
 {
-    "char" : "tommy",
+    "char" : "tommy_talk",
     "text" : "What the fuck do you want, bird???"
 },
 {
-    "char" : "dog",
+    "char" : "dawg_talk",
     "text" : "WATCH YOUR MOUTH KID"
 },
 {
-    "char" : "monkey",
+    "char" : "munkey_talk",
     "text" : "Or you'll die."
 }]
