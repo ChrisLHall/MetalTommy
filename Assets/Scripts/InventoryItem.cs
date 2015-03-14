@@ -10,6 +10,21 @@ public class InventoryItem : MonoBehaviour {
     public delegate void ClickAction ();
     ClickAction onClick;
 
+    public static InventoryItem InstantiateItem (string itemName) {
+        GameObject itemPrefab = Resources.Load<GameObject>("Prefabs/Item");
+        InventoryItem itemObject = ((GameObject) Instantiate(itemPrefab))
+            .GetComponent<InventoryItem>();
+        itemObject.name = itemName;
+        itemObject.SetSprite(Resources.Load<Sprite>("Icons/" + itemName + "_icon"));
+        return itemObject;
+    }
+
+    /** Returns a function that tells the inventory gui that ITEMNAME was
+     * clicked. */
+    public static ClickAction CreateClickFunc (string itemName) {
+        return () => Controller.Get.Inventory.ItemWasClicked(itemName);
+    }
+
 	// Use this for initialization
 	void Start () {
         rectTransform = GetComponent<RectTransform>();
@@ -30,8 +45,9 @@ public class InventoryItem : MonoBehaviour {
         rectTransform.offsetMax = offsetMax;
         
         float height = rectTransform.rect.height;
-        rectTransform.SetInsetAndSizeFromParentEdge(RectTransform.Edge.Left,
-                                                    SPACING, height);
+        rectTransform.SetInsetAndSizeFromParentEdge(
+                RectTransform.Edge.Left, height * index + SPACING * (1 + index),
+                height);
     }
 
     /** Sets the function that is called when this item is clicked. */

@@ -4,14 +4,15 @@ using System.Collections;
 public class Controller : MonoBehaviour {
     void Awake () {
         Application.targetFrameRate = 60;
-    }
 
-	// Use this for initialization
-	void Start () {
         Character = FindObjectOfType<Character>();
         Dialogue = FindObjectOfType<DialogueGUI>();
         Fade = FindObjectOfType<FadeGUI>();
         Inventory = FindObjectOfType<InventoryGUI>();
+    }
+
+	// Use this for initialization
+	void Start () {
 	}
 	
 	// Update is called once per frame

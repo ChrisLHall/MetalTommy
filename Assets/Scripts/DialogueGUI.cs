@@ -71,20 +71,27 @@ public class DialogueGUI : MonoBehaviour {
         Show();
         partCharacter = currentConvo[currentPart]["char"];
         partText = currentConvo[currentPart]["text"];
-        
-        characterImage.sprite
-                = Resources.Load<Sprite>("Conversations/partCharacter");
+
+        if (partCharacter == null) {
+            characterImage.color = Color.clear;
+        } else {
+            characterImage.color = Color.white;
+            characterImage.sprite
+                    = Resources.Load<Sprite>("Conversations/" + partCharacter);
+        }
         dialogueText.text = partText;
     }
 
     void Show () {
         characterImage.gameObject.SetActive(true);
         dialogueText.transform.parent.gameObject.SetActive(true);
+        Controller.Get.Inventory.Hide();
     }
 
     void Hide () {
         characterImage.gameObject.SetActive(false);
         dialogueText.transform.parent.gameObject.SetActive(false);
+        Controller.Get.Inventory.Show();
     }
 
     public bool InConversation {

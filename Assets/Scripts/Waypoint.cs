@@ -24,4 +24,10 @@ public class Waypoint : MonoBehaviour {
     public virtual void OnDeparture () {
 
     }
+
+    public Vector3 WaypointPosition {
+        get {
+            return transform.FindChild("Waypoint").position;
+        }
+    }
 }

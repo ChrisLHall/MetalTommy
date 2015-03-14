@@ -7,8 +7,6 @@ public class Character : MonoBehaviour {
     public Waypoint nextWaypoint;
     public float speedUnitsPerSec;
 
-    static readonly Vector3 WAYPOINT_OFFSET = new Vector3(0f, -1f, 0f);
-
 	// Use this for initialization
 	void Start () {
         currentWaypoint.OnArrival();
@@ -55,7 +53,7 @@ public class Character : MonoBehaviour {
             if (nextWaypoint == null) {
                 return transform.position;
             } else {
-                return nextWaypoint.transform.position + WAYPOINT_OFFSET;
+                return nextWaypoint.WaypointPosition;
             }
         }
     }
@@ -65,7 +63,7 @@ public class Character : MonoBehaviour {
             if (currentWaypoint == null) {
                 return transform.position;
             } else {
-                return currentWaypoint.transform.position + WAYPOINT_OFFSET;
+                return currentWaypoint.WaypointPosition;
             }
         }
     }
