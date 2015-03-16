@@ -2,6 +2,13 @@
 using System.Collections;
 
 public class Controller : MonoBehaviour {
+    public enum Completion { None, Help, Hurt };
+    public enum DoorColor {Blue, Yellow, Purple, None};
+    public static Completion BlueRoomResult = Completion.None;
+    public static Completion YellowRoomResult = Completion.None;
+    public static Completion PurpleRoomResult = Completion.None;
+    public static DoorColor startDoor = DoorColor.Blue;
+
     void Awake () {
         Application.targetFrameRate = 60;
 
@@ -13,7 +20,8 @@ public class Controller : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	}
+
+    }
 	
 	// Update is called once per frame
 	void Update () {

@@ -1,0 +1,4 @@
+[{
+    "char" : "tommy_talk",
+    "text" : "\"Don't play with fire\" - Your Mom"
+}]

@@ -1,0 +1,12 @@
+[{
+    "char" : "munkey_talk",
+    "text" : "I love snakes! But where have all my snakes gone?! Help me find all of my snakes!"
+},
+{
+    "char" : "kids_talk",
+    "text" : "Okay! Whee find Mr. Monkey's snakes! Pets!!! FUN!!!!!"
+},
+{
+    "char" : "tommy_talk",
+    "text" : "How is everyone so fucking lively..."
+}]

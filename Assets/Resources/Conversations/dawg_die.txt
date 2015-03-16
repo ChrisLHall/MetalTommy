@@ -1,0 +1,24 @@
+[{
+    "char" : "kids_talk",
+    "text" : "Mr. Dog why are you sleeping on the floor?"
+},
+{
+    "char" : "dawg_dead_talk",
+    "text" : "..."
+},
+{
+    "char" : "kids_talk",
+    "text" : "Mr. Dog get up! You have to go shopping!"
+},
+{
+    "char" : "tommy_talk",
+    "text" : "Mr. Dog aint going shopping anymore kids. So shut up already."
+},
+{
+    "char" : "kids_talk",
+    "text" : "Mr. Dog Mr. Dog!"
+},
+{
+    "char" : "tommy_talk",
+    "text" : "...I’m outta here."
+}]

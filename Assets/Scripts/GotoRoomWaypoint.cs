@@ -23,6 +23,10 @@ public class GotoRoomWaypoint : Waypoint {
     }
 
     void GotoRoomFunction () {
+        MakeItemPermanent permanents = GetComponent<MakeItemPermanent>();
+        if (permanents != null) {
+            permanents.ProcessAllItems();
+        }
         Controller.Get.Fade.FadeOut(
                 ()=>Application.LoadLevel(sceneName));
         

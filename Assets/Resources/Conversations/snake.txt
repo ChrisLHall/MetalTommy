@@ -1,0 +1,8 @@
+[{
+    "char" : "tommy_talk",
+    "text" : "Argh snake a snake! Snaaaake a snake! Oh, it's a snake! Snaaaake! Actually, ... snakes are pretty awesome."
+},
+{
+    "char" : "tommy_talk",
+    "text" : "Although I still hate this a LOT."
+}]

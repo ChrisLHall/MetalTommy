@@ -1,0 +1,4 @@
+[{
+    "char" : "tommy_talk",
+    "text" : "A wallet filled with cash. I’d swipe the cash but it’s fucking monopoly money."
+}]

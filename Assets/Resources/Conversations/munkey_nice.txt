@@ -1,0 +1,16 @@
+[{
+    "char" : "munkey_talk",
+    "text" : "Now all of my friends the snakes are back! I’ll never be lonely again because I have them!"
+},
+{
+    "char" : "kids_talk",
+    "text" : "We did it! Yaaay!"
+},
+{
+    "char" : "tommy_talk",
+    "text" : "...you’re welcome! 0:)"
+},
+{
+    "char" : "tommy_talk",
+    "text" : "I hate these people. Or are they even people?"
+}]

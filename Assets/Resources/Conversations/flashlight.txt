@@ -1,0 +1,4 @@
+[{
+    "char" : "tommy_talk",
+    "text" : "I still don't understand why Mr. Bird needs a flashlight during the day."
+}]

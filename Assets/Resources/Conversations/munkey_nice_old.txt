@@ -1,0 +1,8 @@
+[{
+    "char" : "munkey_talk",
+    "text" : "Now all of my friends the snakes are back! I’ll never be lonely again because I have them!"
+},
+{
+    "char" : "tommy_talk",
+    "text" : "Yeah, yeah, Mr. Weird-Ass Monkey Thing."
+}]

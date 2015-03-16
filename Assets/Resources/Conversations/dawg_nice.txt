@@ -1,0 +1,76 @@
+[{
+    "char" : "tommy_talk",
+    "text" : "Here."
+},
+{
+    "char" : "dawg_talk",
+    "text" : "Little Timmy do you know where my wallet is?"
+},
+{
+    "char" : "tommy_talk",
+    "text" : "Uh here’s your wallet. My name aint Timmy you fucker."
+},
+{
+    "char" : "dawg_talk",
+    "text" : "Is my wallet over there?"
+},
+{
+    "char" : "tommy_talk",
+    "text" : "No, it’s here. It’s clearly in my hands you dumbass."
+},
+{
+    "char" : "dawg_talk",
+    "text" : "Is this my wallet?"
+},
+{
+    "char" : "tommy_talk",
+    "text" : "Yes it is Mr. Dog."
+},
+{
+    "char" : "dawg_talk",
+    "text" : "Really it’s my wallet?"
+},
+{
+    "char" : "tommy_talk",
+    "text" : "Yes, yes it is Mr. Dog. But it's about to be my fucking wallet."
+},
+{
+    "char" : "dawg_talk",
+    "text" : "Wow thanks Timmy!"
+},
+{
+    "char" : "tommy_talk",
+    "text" : "No it’s… whatever."
+},
+{
+    "char" : "dawg_talk",
+    "text" : "Now I can go shopping! Hooray!"
+},
+{
+    "char" : "kids_talk",
+    "text" : "Hooray!"
+},
+{
+    "char" : "tommy_talk",
+    "text" : "Uh ... hooray?"
+},
+{
+    "char" : "dawg_talk",
+    "text" : "You’ve been a good kid so here’s a reward for you!"
+},
+{
+    "char" : "tommy_talk",
+    "text" : "What do I do with this thing..."
+},
+{
+    "char" : "dawg_talk",
+    "text" : "Ok, so long kids!"
+},
+{
+    "char" : "kids_talk",
+    "text" : "Bye bye, Boss Dogg!"
+},
+{
+    "char" : "snoop_talk",
+    "text" : "Word."
+}]

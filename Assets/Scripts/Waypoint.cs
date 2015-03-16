@@ -4,6 +4,8 @@ using System.Collections;
 
 public class Waypoint : MonoBehaviour {
     private Character character;
+    public enum FaceDir { None, Left, Right };
+    public FaceDir forceFace = FaceDir.None;
 
 	// Use this for initialization
 	protected virtual void Start () {
@@ -29,6 +31,11 @@ public class Waypoint : MonoBehaviour {
     }
 
     public virtual void OnArrival () {
+        if (forceFace == FaceDir.Right) {
+            character.Face(true);
+        } else if (forceFace == FaceDir.Left) {
+            character.Face(false);
+        }
     }
 
     public virtual void OnDeparture () {

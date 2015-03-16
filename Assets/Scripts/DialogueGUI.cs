@@ -33,16 +33,27 @@ public class DialogueGUI : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+        // Hit enter to advance
+	    if (Input.GetKeyDown(KeyCode.Return)) {
+            if (InConversation) {
+                NextPart();
+            }
+        }
 	}
 
-    public void SetConversation (string nameOfConversation) {
+    public bool ConversationExists (string nameOfConvo) {
+        TextAsset asset = Resources.Load<TextAsset>("Conversations/"
+                                                    + nameOfConvo);
+        return asset != null;
+    }
+
+    public void SetConversation (string nameOfConvo) {
         if (InConversation) {
             return;
         }
 
 		TextAsset asset = Resources.Load<TextAsset>("Conversations/"
-                + nameOfConversation);
+                                                    + nameOfConvo);
         currentConvo = JSON.Parse(asset.text).AsArray;
         currentPart = 0;
         SetCharAndText();

@@ -18,11 +18,23 @@ public class NPCWaypoint : Waypoint {
     
     public override void OnArrival () {
         itemObject = InventoryItem.InstantiateItem("talk");
-        itemObject.SetClickAction(TalkFunction);
+        itemObject.SetClickAction(StartTalking);
         Controller.Get.Inventory.AddItem(itemObject);
     }
+
+    public void SetConvoAndStart (string convo) {
+        dialogueName = convo;
+        StartTalking();
+    }
     
-    void TalkFunction () {
+    void StartTalking () {
         Controller.Get.Dialogue.SetConversation(dialogueName);
+        // Automatically switch to the "old" version
+        if (!dialogueName.EndsWith("_old")) {
+            string oldVersion = dialogueName + "_old";
+            if (Controller.Get.Dialogue.ConversationExists(oldVersion)) {
+                dialogueName = oldVersion;
+            }
+        }
     }
 }

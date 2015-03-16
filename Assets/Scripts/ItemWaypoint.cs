@@ -4,6 +4,7 @@ using System.Collections;
 
 public class ItemWaypoint : Waypoint {
     public string itemName;
+    public bool persistentItem = true;
 
     InventoryItem itemObject;
 
@@ -15,7 +16,8 @@ public class ItemWaypoint : Waypoint {
 
         givenItem = false;
 
-        if (Controller.Get.Inventory.HasPersistentItem(itemName)) {
+        if (persistentItem
+                && Controller.Get.Inventory.HasPersistentItem(itemName)) {
             gameObject.SetActive(false);
         }
     }
@@ -24,12 +26,17 @@ public class ItemWaypoint : Waypoint {
     }
     
     public override void OnArrival () {
-        if (givenItem) {
+        if (givenItem || Controller.Get.Inventory.GetItem(itemName) != null) {
             return;
         }
         givenItem = true;
         itemObject = InventoryItem.InstantiateItem(itemName);
-        Controller.Get.Inventory.AddPersistentItem(itemObject);
+        if (persistentItem) {
+            Controller.Get.Inventory.AddPersistentItem(itemObject);
+        } else {
+            Controller.Get.Inventory.AddItem(itemObject);
+            itemObject.SetClickAction(InventoryItem.CreateClickFunc(itemName));
+        }
 
         gameObject.SetActive(false);
     }

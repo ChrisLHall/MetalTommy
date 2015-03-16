@@ -12,6 +12,18 @@ public class Character : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        if (Application.loadedLevelName == "mainroom") {
+            if (Controller.startDoor == Controller.DoorColor.Blue) {
+                currentWaypoint
+                        = GameObject.Find("blue_door").GetComponent<Waypoint>();
+            } else if (Controller.startDoor == Controller.DoorColor.Yellow) {
+                currentWaypoint
+                        = GameObject.Find("yellow_door").GetComponent<Waypoint>();
+            } else if (Controller.startDoor == Controller.DoorColor.Purple) {
+                currentWaypoint
+                        = GameObject.Find("purple_door").GetComponent<Waypoint>();
+            }
+        }
         lastWaypoint = null;
         currentWaypoint.OnArrival();
         transform.position = CurrentWaypointPosition;
@@ -25,9 +37,9 @@ public class Character : MonoBehaviour {
             float actualSpeed = speedUnitsPerSec / 60f;
             Vector3 diff = GoToPosition - transform.position;
             if (diff.x > 0) {
-                animator.SetBool("is_right", true);
+                Face(true);
             } else {
-                animator.SetBool("is_right", false);
+                Face(false);
             }
             diff.z = 0f;
             if (diff.magnitude <= actualSpeed) {
@@ -53,6 +65,11 @@ public class Character : MonoBehaviour {
             currentWaypoint = null;
             animator.SetBool("walk", true);
         }
+    }
+
+    /** Face right if RIGHTORLEFT is true, left otherwise. */
+    public void Face (bool rightOrLeft) {
+        animator.SetBool("is_right", rightOrLeft);
     }
 
     public Waypoint AtWaypoint {

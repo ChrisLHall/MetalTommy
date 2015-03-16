@@ -1,0 +1,29 @@
+[{
+    "char" : "tommy_talk",
+    "text" : "Hey you damn pigeon. Here’s a “light”."
+},
+{
+    "char" : "byrd_talk",
+    "text" : "...Turn on pls..."
+},
+{
+    "char" : "tommy_talk",
+    "text" : "...If you want."
+}
+{
+    "char" : "byrd_fire_talk",
+    "text" : "Ah, light. Warm. Hotttttt I BURNING!"
+},
+{
+    "char" : "tommy_talk",
+    "text" : "Welp, yeah pretty much!"
+},
+{
+    "char" : "kids_talk",
+    "text" : "Mr. Bird is shining! Yay!"
+},
+{
+    "char" : "tommy_talk",
+    "text" : "...Ok then."
+}]
+

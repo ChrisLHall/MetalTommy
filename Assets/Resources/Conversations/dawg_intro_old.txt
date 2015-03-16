@@ -1,0 +1,16 @@
+[{
+    "char" : "dawg_talk",
+    "text" : "I wonder if it’s over there?"
+},
+{
+    "char" : "kids_talk",
+    "text" : "No Mr. Dog, it’s there!"
+},
+{
+    "char" : "dawg_talk",
+    "text" : "Where?"
+},
+{
+    "char" : "tommy_talk",
+    "text" : "Oh god ... I can't deal with this shit anymore."
+}]

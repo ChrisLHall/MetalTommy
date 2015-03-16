@@ -1,0 +1,8 @@
+[{
+    "char" : "munkey_talk",
+    "text" : "Got one!"
+},
+{
+    "char" : "kids_talk",
+    "text" : "Yaaaaaaaaaaaaaaay!!!"
+}]

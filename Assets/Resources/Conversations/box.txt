@@ -1,0 +1,8 @@
+[{
+    "char" : "tommy_talk",
+    "text" : "A box of Mr. Monkey's pet snakes. What the hell is a monkey doing with so many snakes."
+},
+{
+    "char" : "tommy_talk",
+    "text" : "Then again, fucking nothing makes sense here."
+}]

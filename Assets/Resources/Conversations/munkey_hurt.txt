@@ -1,0 +1,28 @@
+[{
+    "char" : "munkey_talk",
+    "text" : "No no please don’t do that you don’t have to ...!"
+},
+{
+    "char" : "munkey_box_talk",
+    "text" : "Aaah! Now I get to be best frieeends with my snakes yaaaaay! OUCHHH!!! *crunch crunch*"
+},
+{
+    "char" : "kids_talk",
+    "text" : "Yaaaaaaaaaaay wow we did great! Are you okay Mr. Monkey?"
+},
+{
+    "char" : "tommy_talk",
+    "text" : "...uh, I guess I should check on Mr. Monkey..."
+},
+{
+    "char" : "munkey_dead_talk",
+    "text" : ". . ."
+},
+{
+    "char" : "tommy_talk",
+    "text" : "Oh dear god okay time to leave. Bye, you dumbass monster kids..."
+},
+{
+    "char" : "kids_talk",
+    "text" : "Yaaaay! Hi snakes!"
+}]

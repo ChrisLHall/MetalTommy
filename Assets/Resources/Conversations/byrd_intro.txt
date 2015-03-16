@@ -1,0 +1,76 @@
+[{
+    "char" : "byrd_talk",
+    "text" : "..."
+},
+{
+    "char" : "tommy_talk",
+    "text" : "..."
+},
+{
+    "char" : "byrd_talk",
+    "text" : "..."
+},
+{
+    "char" : "tommy_talk",
+    "text" : "..."
+},
+{
+    "char" : "tommy_talk",
+    "text" : "Is it alive?"
+},
+{
+    "char" : "byrd_talk",
+    "text" : "...coo."
+},
+{
+    "char" : "tommy_talk",
+    "text" : "Coo? Like a pigeon? This thing’s a pigeon?"
+},
+{
+    "char" : "byrd_talk",
+    "text" : "...Is dark."
+},
+{
+    "char" : "tommy_talk",
+    "text" : "The hell? It's like, daytime."
+},
+{
+    "char" : "byrd_talk",
+    "text" : "Is dark. Is scare."
+},
+{
+    "char" : "tommy_talk",
+    "text" : "This thing can’t even speak correctly."
+},
+{
+    "char" : "byrd_talk",
+    "text" : "Help. Is dark."
+},
+{
+    "char" : "tommy_talk",
+    "text" : "Dumb fuck."
+},
+{
+    "char" : "byrd_talk",
+    "text" : "I needs a light."
+},
+{
+    "char" : "kids_talk",
+    "text" : "Help Mr. Bird find a light!"
+},
+{
+    "char" : "tommy_talk",
+    "text" : "Holy shit where’d you pricks come from."
+},
+{
+    "char" : "kids_talk",
+    "text" : "The flashlight is in the box! Look for the flashlight!"
+},
+{
+    "char" : "tommy_talk",
+    "text" : "Ok ok god I'll do it, shut up."
+},
+{
+    "char" : "byrd_talk",
+    "text" : "Halp?"
+}]

@@ -25,7 +25,7 @@ public class InventoryItem : MonoBehaviour {
     }
 
 	// Use this for initialization
-	void Start () {
+	void Awake () {
         rectTransform = GetComponent<RectTransform>();
 	}
 	

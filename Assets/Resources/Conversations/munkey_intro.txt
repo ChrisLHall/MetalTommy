@@ -1,0 +1,24 @@
+[{
+    "char" : "munkey_talk",
+    "text" : "Hey kids! Don’t you love pets? I sure looooove pets! I wish I wish I had a thousand pets!"
+},
+{
+    "char" : "kids_talk",
+    "text" : "Yay, pets! Let’s help Mr. Monkey’s pets!"
+},
+{
+    "char" : "tommy_talk",
+    "text" : "Do we have to?"
+},
+{
+    "char" : "munkey_talk",
+    "text" : "I love snakes! But where have all my snakes gone?! Help me find all of my snakes!"
+},
+{
+    "char" : "kids_talk",
+    "text" : "Okay! Whee find Mr. Monkey's snakes! Pets!!! FUN!!!!!"
+},
+{
+    "char" : "tommy_talk",
+    "text" : "How is everyone so fucking lively..."
+}]

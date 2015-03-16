@@ -1,0 +1,12 @@
+[{
+    "char" : "tommy_talk",
+    "text" : "Now what."
+},
+{
+    "char" : "byrd_talk",
+    "text" : "...coo."
+},
+{
+    "char" : "tommy_talk",
+    "text" : "Ugh."
+}]

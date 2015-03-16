@@ -1,0 +1,32 @@
+[{
+    "char" : "tommy_talk",
+    "text" : "Here you go."
+},
+{
+    "char" : "byrd_talk",
+    "text" : "...is turn on?"
+},
+{
+    "char" : "tommy_talk",
+    "text" : "Obviously."
+},
+{
+    "char" : "byrd_talk",
+    "text" : "I happys!"
+},
+{
+    "char" : "kids_talk",
+    "text" : "Yaaaay Mr. Bird is happys!"
+},
+{
+    "char" : "tommy_talk",
+    "text" : "...Now what."
+},
+{
+    "char" : "byrd_talk",
+    "text" : "...coo."
+},
+{
+    "char" : "tommy_talk",
+    "text" : "Bye then."
+}]
