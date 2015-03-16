@@ -3,7 +3,6 @@ using UnityEngine.UI;
 using System.Collections;
 
 public class InventoryItem : MonoBehaviour {
-    static readonly float HIGHLIGHTED_SIZE = 1.2f;
     static readonly float SPACING = 10f;
     RectTransform rectTransform;
 
@@ -62,15 +61,4 @@ public class InventoryItem : MonoBehaviour {
     public void OnClickIcon () {
         onClick();
     }
-
-    public void Highlight () {
-        rectTransform.localScale = new Vector3(HIGHLIGHTED_SIZE,
-                                               HIGHLIGHTED_SIZE, 1f);
-    }
-
-    public void Unhighlight () {
-        rectTransform.localScale = new Vector3(1f, 1f, 1f);
-    }
-
-
 }
