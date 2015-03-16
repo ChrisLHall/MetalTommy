@@ -2,16 +2,21 @@
 using System.Collections;
 
 public class Character : MonoBehaviour {
+    Waypoint lastWaypoint;
     public Waypoint currentWaypoint;
-    [HideInInspector]
-    public Waypoint nextWaypoint;
+    Waypoint nextWaypoint;
+
     public float speedUnitsPerSec;
+
+    Animator animator;
 
 	// Use this for initialization
 	void Start () {
+        lastWaypoint = null;
         currentWaypoint.OnArrival();
         transform.position = CurrentWaypointPosition;
         nextWaypoint = null;
+        animator = GetComponent<Animator>();
 	}
 	
 	// Update is called once per frame
@@ -19,12 +24,18 @@ public class Character : MonoBehaviour {
         if (nextWaypoint != null) {
             float actualSpeed = speedUnitsPerSec / 60f;
             Vector3 diff = GoToPosition - transform.position;
+            if (diff.x > 0) {
+                animator.SetBool("is_right", true);
+            } else {
+                animator.SetBool("is_right", false);
+            }
             diff.z = 0f;
             if (diff.magnitude <= actualSpeed) {
                 transform.position = GoToPosition;
                 currentWaypoint = nextWaypoint;
                 nextWaypoint = null;
                 currentWaypoint.OnArrival();
+                animator.SetBool("walk", false);
             } else {
                 transform.position += diff.normalized * actualSpeed;
             }
@@ -35,7 +46,12 @@ public class Character : MonoBehaviour {
         if (currentWaypoint != waypoint
             && nextWaypoint != waypoint) {
             nextWaypoint = waypoint;
-            currentWaypoint.OnDeparture();
+            if (currentWaypoint != null) {
+                currentWaypoint.OnDeparture();
+                lastWaypoint = currentWaypoint;
+            }
+            currentWaypoint = null;
+            animator.SetBool("walk", true);
         }
     }
 

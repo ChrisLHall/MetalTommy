@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.EventSystems;
 using System.Collections;
 
 public class Waypoint : MonoBehaviour {
@@ -7,6 +8,15 @@ public class Waypoint : MonoBehaviour {
 	// Use this for initialization
 	protected virtual void Start () {
         character = FindObjectOfType<Character>();
+        EventTrigger.TriggerEvent clickEvent = new EventTrigger.TriggerEvent();
+        clickEvent.AddListener((BaseEventData unused)=>Click());
+
+        EventTrigger.Entry entry = new EventTrigger.Entry();
+        entry.eventID = EventTriggerType.PointerDown;
+        entry.callback = clickEvent;
+        
+        EventTrigger trigger = GetComponent<EventTrigger>();
+        trigger.delegates.Add(entry);
 	}
 	
 	// Update is called once per frame
@@ -14,7 +24,7 @@ public class Waypoint : MonoBehaviour {
 	
 	}
 
-    protected virtual void OnMouseDown () {
+    public virtual void Click () {
         character.TrySetWaypoint(this);
     }
 

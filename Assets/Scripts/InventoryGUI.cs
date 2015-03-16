@@ -74,6 +74,7 @@ public class InventoryGUI : MonoBehaviour {
             return;
         }
         InventoryItem removed = inventoryItems[name];
+        inventoryItems.Remove(name);
         removed.transform.SetParent(null);
         removed.gameObject.SetActive(false);
         Destroy(removed);
