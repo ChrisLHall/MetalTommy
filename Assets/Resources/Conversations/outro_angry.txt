@@ -1,0 +1,57 @@
+[{
+    "char" : "",
+    "text" : "Ha… well I guess you win that, right. But lemme say..."
+},
+{
+    "char" : "boski_dead_talk",
+    "text" : "You won't get anywhere acting like this. You think you can just beat the shit out of everyone anytime?"
+},
+{
+    "char" : "boski_dead_talk",
+    "text" : "One day you are gonna get fucking smacked around and nobody will be there to pick your sorry ass up."
+},
+{
+    "char" : "boski_dead_talk",
+    "text" : "You are one sad little fucker."
+},
+{
+    "char" : "tommy_talk",
+    "text" : "..."
+},
+{
+    "char" : "tommy_talk",
+    "text" : "Are you done?"
+},
+{
+    "char" : "boski_dead_talk",
+    "text" : "Get out of here, you goddamn kid."
+},
+{
+    "char" : "",
+    "text" : "..."
+},
+{
+    "char" : "",
+    "text" : "What was that shitty bear talking about? I'm just fine like this."
+},
+{
+    "char" : "",
+    "text" : "This way I don't have to depend on anyone. I know I can handle anything on my own."
+},
+{
+    "char" : "",
+    "text" : "I don't need anyone."
+},
+{
+    "char" : "",
+    "text" : "..."
+},
+{
+    "char" : "",
+    "text" : "... Nobody is listening ..."
+},
+{
+    "char" : "",
+    "text" : "THE END"
+}]
+

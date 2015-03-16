@@ -1,0 +1,24 @@
+[{
+    "char" : "boski_nice_talk",
+    "text" : "Well well, Tommy, you did wonderfully!"
+},
+{
+    "char" : "tommy_talk",
+    "text" : "Yeah, I guess I helped everyone out after all."
+},
+{
+    "char" : "tommy_talk",
+    "text" : "Hating everyone was pretty lonely I guess. Maybe I'm glad I helped them in the end."
+},
+{
+    "char" : "boski_nice_talk",
+    "text" : "That's great to hear, Tommy. Since you did such a good job helping us, let me tell you what."
+},
+{
+    "char" : "boski_nice_talk",
+    "text" : "You get to stay here now and hang out will all of the other kids who are JUST LIKE YOU!"
+},
+{
+    "char" : "kids_talk",
+    "text" : "HOORAY!!! TOMMY FOREVER!"
+}]

@@ -1,0 +1,12 @@
+[{
+    "char" : "boski_angry_talk",
+    "text" : "You KILLED EVERYONE you sick, twisted little child."
+},
+{
+    "char" : "tommy_talk",
+    "text" : "...! (Oh shit...)"
+},
+{
+    "char" : "tommy_talk",
+    "text" : "I FUCKING HATE THIS CREEPY BULLSHIT PLACE!!!"
+}]

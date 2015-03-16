@@ -33,6 +33,13 @@ public class Controller : MonoBehaviour {
         for (int i = 0; i < depthObjects.Length; i++) {
             depthObjects[i].GetComponent<SpriteRenderer>().sortingOrder = 5 + i;
         }
+
+        // TODO REMOVE
+        if (Input.GetKeyDown(KeyCode.LeftBracket)) {
+            BlueRoomResult = PurpleRoomResult = YellowRoomResult = Completion.Help;
+        } else if (Input.GetKeyDown(KeyCode.RightBracket)) {
+            BlueRoomResult = PurpleRoomResult = YellowRoomResult = Completion.Hurt;
+        }
 	}
 
     /** The level's controller instance. */

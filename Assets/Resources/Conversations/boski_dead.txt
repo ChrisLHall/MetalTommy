@@ -1,0 +1,12 @@
+[{
+    "char" : "boski_dead_talk",
+    "text" : "YOU..."
+},
+{
+    "char" : "tommy_talk",
+    "text" : "FUCKING FINALLY."
+},
+{
+    "char" : "boski_dead_talk",
+    "text" : "You...have an... an attitude (*gasp) ... problem, kid... a ... a real ... b-big ... one..."
+}]

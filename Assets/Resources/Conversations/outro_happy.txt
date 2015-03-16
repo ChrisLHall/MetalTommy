@@ -1,0 +1,48 @@
+[{
+    "char" : "boski_normal_talk",
+    "text" : "Hello there Tommy."
+},
+{
+    "char" : "tommy_talk",
+    "text" : "Oh whoa you're awake."
+},
+{
+    "char" : "boski_normal_talk",
+    "text" : "That’s right Tommy. You’ve been a good boy today haven’t you?"
+},
+{
+    "char" : "tommy_talk",
+    "text" : "I guess."
+},
+{
+    "char" : "boski_normal_talk",
+    "text" : "That's why I've dropped you into the kids' room. To become one of us."
+},
+{
+    "char" : "kids_talk",
+    "text" : "Yay! A new friend! A new forever friend!"
+},
+{
+    "char" : "tommy_talk",
+    "text" : "Did you just say ... forever ... friend? Shit."
+},
+{
+    "char" : "tommy_talk",
+    "text" : "Although ... at least... I don't have to be forgotten anymore."
+},
+{
+    "char" : "kids_talk",
+    "text" : "YOU ARE ONE OF US NOW TOMMY"
+},
+{
+    "char" : "tommy_talk",
+    "text" : "I ... ok ... YES I AM AREN'T I YES!"
+},
+{
+    "char" : "boski_nice_talk",
+    "text" : "(I love it when they behave...)"
+},
+{
+    "char" : "kids_talk",
+    "text" : "THE END..."
+}]

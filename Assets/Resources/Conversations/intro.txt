@@ -1,0 +1,40 @@
+[{
+    "char" : "",
+    "text" : "Ugh... man this day’s been shit. As usual."
+},
+{
+    "char" : "",
+    "text" : "Stupid little sister made me watch her shitty cartoons with her all day..."
+},
+{
+    "char" : "",
+    "text" : "Those fucking animals are gonna give me nightmares someday."
+},
+{
+    "char" : "tommy_talk",
+    "text" : "Ugh... wait, what the... Am I sleeping or what..."
+},
+{
+    "char" : "tommy_talk",
+    "text" : "Where the hell is this place??"
+},
+{
+    "char" : "tommy_talk",
+    "text" : "Kinda familiar..."
+},
+{
+    "char" : "tommy_talk",
+    "text" : "Aw helll no."
+},
+{
+    "char" : "tommy_talk",
+    "text" : "I knew watching those creepyass shows was gonna mess with my head."
+},
+{
+    "char" : "tommy_talk",
+    "text" : "Shit I gotta get the hell out of here before dancing stuffed animals start popping out."
+},
+{
+    "char" : "tommy_talk",
+    "text" : "...but what the FUCK is that thing over there..."
+}]
